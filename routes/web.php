@@ -41,6 +41,7 @@ $router->group(['prefix'=>'/api/'], function () use ($router){
         $router->get('user', function () {
             return response()->json(Auth::user());
         });
+        $router->post('lottery_game_match_users/{lottery_game_match_id}', ['uses'=>'LotteryGameMatch\AttachController@record']);
     });
     $router->group(['middleware' => ['admin', 'auth']], function() use($router){
         $router->post('lottery_game_matches', ['uses'=>'LotteryGameMatch\CreateController@store']);
