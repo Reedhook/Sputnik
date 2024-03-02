@@ -44,6 +44,7 @@ $router->group(['prefix'=>'/api/'], function () use ($router){
         $router->post('lottery_game_match_users/{lottery_game_match_id}', ['uses'=>'LotteryGameMatch\AttachController@record']);
     });
     $router->group(['middleware' => ['admin', 'auth']], function() use($router){
+        $router->get('lottery_game_matches', ['uses' => 'LotteryGameMatch\IndexController@index']);
         $router->post('lottery_game_matches', ['uses'=>'LotteryGameMatch\CreateController@store']);
         $router->put('lottery_game_matches/{lottery_game_match_id}', ['uses'=>'LotteryGameMatch\UpdateController@update']);
     });
