@@ -15,6 +15,8 @@ use \App\Http\Controllers\UserController;
 |
 */
 
+use Firebase\JWT\JWT;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Lumen\Routing\Router;
 
 $router->get('/', function () use ($router) {
@@ -22,4 +24,11 @@ $router->get('/', function () use ($router) {
 });
 $router->group(['prefix' => '/api/users/'], function () use ($router) {
     $router->post('register', 'UserController@register');
+    $router->post('login', 'AuthController@login');
+});
+$router->group(['middleware' => 'auth'], function () use ($router) {
+    $router->get('user', function (){
+            return response()->json(Auth::user());
+        });
+
 });
