@@ -15,9 +15,11 @@ class EventServiceProvider extends ServiceProvider
         \App\Events\ExampleEvent::class => [
             \App\Listeners\ExampleListener::class,
         ],
-        \App\Events\SameRecordUserEvent::class =>[
-            \App\Listeners\SameRecordUserListener::class
-        ]
+        \App\Events\RecordUsersToGameEvent::class => [
+            \App\Listeners\SameRecordUserListener::class,
+            \App\Listeners\MaxCountUsersListener::class
+
+        ],
     ];
 
     /**

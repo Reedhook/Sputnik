@@ -5,7 +5,7 @@ namespace App\Events;
 use App\Models\LotteryGameMatch;
 use App\Models\User;
 
-class SameRecordUserEvent extends Event
+class RecordUsersToGameEvent extends Event
 {
     public LotteryGameMatch $game;
     public User $user;

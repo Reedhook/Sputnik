@@ -21,7 +21,7 @@ class CreateController extends Controller
     {
         $validated = $this->validate($request, [
             'game_id' => 'required|integer|exists:lottery_games,id',
-            'start_date' => 'required|date_format:Y:M:D',
+            'start_date' => 'required|date',
             'start_time' => 'required|date_format:H:i',
         ]);
         $response = LotteryGameMatch::create($validated);

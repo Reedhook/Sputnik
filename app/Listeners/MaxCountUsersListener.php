@@ -3,9 +3,11 @@
 namespace App\Listeners;
 
 use App\Events\RecordUsersToGameEvent;
+use App\Models\LotteryGame;
 use Exception;
+use Illuminate\Support\Facades\DB;
 
-class SameRecordUserListener
+class MaxCountUsersListener
 {
     /**
      * Create the event listener.
@@ -28,10 +30,9 @@ class SameRecordUserListener
     {
         $user = $event->user;
         $game = $event->game;
-        if ($user->lottery_game_matches()->where('lottery_game_match_id', $game['id'])->exists()){
-            throw new Exception('Попытка повторной записи на один и тот же матч');
-        } else{
-            $user->lottery_game_matches()->attach($game);
-        }
+        $lottery_game = LotteryGame::find($game['game_id']);
+        $games = DB::table('lottery_game_match_users')->where('lottery_game_match_id')->count();
+        !($lottery_game['gamer_count'] >= $games) ?: throw new Exception('Свободные места закончились');
+        $user->lottery_game_matches()->attach($game);
     }
 }
