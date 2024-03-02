@@ -44,6 +44,7 @@ $router->group(['prefix'=>'/api/'], function () use ($router){
     });
     $router->group(['middleware' => ['admin', 'auth']], function() use($router){
         $router->post('lottery_game_matches', ['uses'=>'LotteryGameMatch\CreateController@store']);
+        $router->put('lottery_game_matches/{lottery_game_match_id}', ['uses'=>'LotteryGameMatch\UpdateController@update']);
     });
     // Все имеют к ним доступ:
     $router->get('lottery_games', ['uses'=>'LotteryGame\IndexController@index']);

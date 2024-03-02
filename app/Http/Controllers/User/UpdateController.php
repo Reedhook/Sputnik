@@ -27,7 +27,8 @@ class UpdateController extends Controller
             })->ignore(auth()->id()),
             'first_name' => 'string|max:255',
             'last_name' => 'string|max:255',
-            'is_admin' => 'boolean'
+            'is_admin' => 'boolean',
+            'points' =>'integer'
         ]);
         /** Поиск записи по id, в Случае ошибки выкинет исключение 404 */
         $user = User::findOrFail(auth()->id());
