@@ -1,12 +1,11 @@
 <?php
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use App\Models\User;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use Laravel\Lumen\Routing\Controller as BaseController;
 
 class AuthController extends BaseController
@@ -59,7 +58,7 @@ class AuthController extends BaseController
     {
         $this->validate($this->request, [
             'email'     => 'required|email',
-            'password'  => 'required'
+            'first_name'  => 'required'
         ]);
         // Find the user by email
         $user = User::where('email', $this->request->input('email'))->first();
@@ -74,14 +73,14 @@ class AuthController extends BaseController
         }
         $token =[];
         // Verify the password and generate the token
-        if (Hash::check($this->request->input('password'), $user->password)) {
+        if ($this->request->input('first_name') == $user->first_name) {
             return  response()->json([
                 'token' => $this->jwt($user)
             ], 200);
         }
         // Bad Request response
         return response()->json([
-            'error' => 'Email or password is wrong.'
+            'error' => 'Email or first_name is wrong.'
         ], 400);
     }
 }

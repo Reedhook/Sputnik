@@ -7,7 +7,9 @@
     "require": {
         "php": "^8.1",
         "firebase/php-jwt": "^6.10",
+        "laravel/helpers": "^1.7",
         "laravel/lumen-framework": "^10.0",
+        "laravel/tinker": "^2.9",
         "paragonie/sodium_compat": "^1.20"
     },
     "require-dev": {

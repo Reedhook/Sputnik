@@ -10,18 +10,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Lumen\Auth\Authorizable;
 
-class User extends Model implements AuthenticatableContract, AuthorizableContract
+class LotteryGameMatch extends Model implements AuthenticatableContract, AuthorizableContract
 {
     use Authenticatable, Authorizable, HasFactory, SoftDeletes;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var string[]
-     */
-    protected $fillable = [
-        'first_name', 'last_name', 'email', 'is_admin', 'points'
-    ];
     protected $guarded = false;
-    protected $table = 'users';
+    protected $table = 'lottery_game_matches';
+
 }

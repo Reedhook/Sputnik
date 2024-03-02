@@ -22,13 +22,30 @@ use Laravel\Lumen\Routing\Router;
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-$router->group(['prefix' => '/api/users/'], function () use ($router) {
-    $router->post('register', 'UserController@register');
-    $router->post('login', 'AuthController@login');
-});
-$router->group(['middleware' => 'auth'], function () use ($router) {
-    $router->get('user', function (){
+
+$router->group(['prefix'=>'/api/'], function () use ($router){
+
+    $router->group(['prefix' => 'users'], function () use ($router) {
+        $router->group(['middleware' => 'guest'], function() use ($router){
+            $router->post('register', ['uses'=>'User\RegisterController@register']);
+            $router->post('login', ['uses'=>'User\AuthController@login']);
+        });
+        $router->group(['middleware'=>'auth'], function() use($router){
+            $router->put('/', ['uses'=>'User\UpdateController@update']);
+            $router->delete('/', ['uses'=>'User\DeleteController@delete']);
+        });
+    });
+
+    //Доступ имеют все авторизованные пользователи
+    $router->group(['middleware' => 'auth'], function() use ($router){
+        $router->get('user', function () {
             return response()->json(Auth::user());
         });
-
+    });
+    $router->group(['middleware' => ['admin', 'auth']], function() use($router){
+        $router->post('lottery_game_matches', ['uses'=>'LotteryGameMatch\CreateController@store']);
+    });
+    // Все имеют к ним доступ:
+    $router->get('lottery_games', ['uses'=>'LotteryGame\IndexController@index']);
 });
+

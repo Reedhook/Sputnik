@@ -78,6 +78,8 @@ $app->configure('app');
 
 $app->routeMiddleware([
     'auth' => App\Http\Middleware\Authenticate::class,
+    'guest' => App\Http\Middleware\GuestMiddleware::class,
+    'admin' => App\Http\Middleware\AdminMiddleware::class,
 ]);
 
 /*
@@ -93,6 +95,7 @@ $app->routeMiddleware([
 
 //$app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
+$app->register(Laravel\Tinker\TinkerServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
