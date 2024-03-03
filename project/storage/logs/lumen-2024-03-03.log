@@ -716,3 +716,35 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-03-03 11:49:31] local.ERROR: Попытка повторной записи на один и тот же матч {"exception":"[object] (Exception(code: 0): Попытка повторной записи на один и тот же матч at /home/reedhook/Documents/Sputnik/project/app/Listeners/SameRecordUserListener.php:32)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/events/Dispatcher.php(478): App\\Listeners\\SameRecordUserListener->handle()
+#1 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/events/Dispatcher.php(286): Illuminate\\Events\\Dispatcher->Illuminate\\Events\\{closure}()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/events/Dispatcher.php(266): Illuminate\\Events\\Dispatcher->invokeListeners()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/helpers.php(190): Illuminate\\Events\\Dispatcher->dispatch()
+#4 /home/reedhook/Documents/Sputnik/project/app/Http/Controllers/LotteryGameMatch/AttachController.php(27): event()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/container/BoundMethod.php(36): App\\Http\\Controllers\\LotteryGameMatch\\AttachController->record()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/container/Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(391): Illuminate\\Container\\Container->call()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(356): Laravel\\Lumen\\Application->callControllerCallable()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(331): Laravel\\Lumen\\Application->callLumenController()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(284): Laravel\\Lumen\\Application->callControllerAction()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute()
+#15 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(48): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#16 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#17 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#18 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#20 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#21 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#22 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#23 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#24 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#25 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#26 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#27 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#28 {main}
+"} 
