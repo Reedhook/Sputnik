@@ -51,10 +51,10 @@ class AuthController extends BaseController
     /**
      * Authenticate a user and return the token if the provided credentials are correct.
      *
-     * @return array|JsonResponse|int
+     * @return JsonResponse
      * @throws ValidationException
      */
-    public function login()
+    public function login(): JsonResponse
     {
         $this->validate($this->request, [
             'email'     => 'required|email',
@@ -71,7 +71,6 @@ class AuthController extends BaseController
                 'error' => 'Email does not exist.'
             ], 400);
         }
-        $token =[];
         // Verify the password and generate the token
         if ($this->request->input('first_name') == $user->first_name) {
             return  response()->json([

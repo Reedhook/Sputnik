@@ -7,7 +7,6 @@ use App\Models\User;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
 
 class RegisterController extends Controller
@@ -27,7 +26,7 @@ class RegisterController extends Controller
             'last_name' => 'required|string|max:255',
             'is_admin' => 'boolean'
         ]);
-        $response = User::create($validated) ?: throw new Exception('Создать пользователя не дуалось');
+        $response = User::create($validated) ?: throw new Exception('Создать пользователя не удалось');
         $user = User::find($response['id']);
         return $this->OkResponse($user, 'user');
     }

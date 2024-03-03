@@ -5,10 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Exception;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\Rule;
 
 class UpdateController extends Controller
 {
@@ -22,9 +19,6 @@ class UpdateController extends Controller
 
         $validated = $this->validate($request,[
             'email' => 'email|string|max:255',
-            Rule::unique('users')->where(function ($query) {
-                $query->whereNull('deleted_at');
-            })->ignore(auth()->id()),
             'first_name' => 'string|max:255',
             'last_name' => 'string|max:255',
             'is_admin' => 'boolean',

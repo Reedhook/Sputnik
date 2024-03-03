@@ -1,6 +1,6 @@
 <?php
 
-namespace project\database\seeders;
+namespace Database\Seeders;
 
 use App\Models\LotteryGame;
 use Illuminate\Database\Seeder;

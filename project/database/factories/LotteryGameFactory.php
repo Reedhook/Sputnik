@@ -1,6 +1,6 @@
 <?php
 
-namespace project\database\factories;
+namespace Database\Factories;
 
 use App\Models\LotteryGame;
 use Illuminate\Database\Eloquent\Factories\Factory;

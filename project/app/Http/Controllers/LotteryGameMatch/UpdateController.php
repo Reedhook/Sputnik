@@ -21,9 +21,10 @@ class UpdateController extends Controller
     /**
      * Метод для завершения матча лотерейной игры
      * @param Request $request
+     * @return JsonResponse
      * @throws Exception
      */
-    public function update(Request $request)
+    public function update(Request $request): JsonResponse
     {
         $game = LotteryGameMatch::findOrFail($request->route('lottery_game_match_id'));
         !$game['is_finished'] ?: throw new Exception('Матч уже закончен');

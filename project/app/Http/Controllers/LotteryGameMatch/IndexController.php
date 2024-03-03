@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\LotteryGameMatch;
 
 use App\Http\Controllers\Controller;
-use App\Models\LotteryGame;
 use App\Models\LotteryGameMatch;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

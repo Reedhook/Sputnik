@@ -18,7 +18,8 @@ class Controller extends BaseController
             ]
         ]);
     }
-    public function deleteResponse(){
+    public function deleteResponse(): JsonResponse
+    {
         return response()->json([
            'status'=>true
         ]);
