@@ -26,6 +26,6 @@ class CreateController extends Controller
         ]);
         $response = LotteryGameMatch::create($validated);
         $game = LotteryGameMatch::find($response['id']);
-        return $this->OkResponse($game, 'lottery_game_matches');
+        return $this->OkResponse($game, 'lottery_game_match');
     }
 }

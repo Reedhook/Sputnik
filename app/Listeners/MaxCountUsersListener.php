@@ -28,11 +28,9 @@ class MaxCountUsersListener
      */
     public function handle(RecordUsersToGameEvent $event)
     {
-        $user = $event->user;
         $game = $event->game;
         $lottery_game = LotteryGame::find($game['game_id']);
         $games = DB::table('lottery_game_match_users')->where('lottery_game_match_id')->count();
-        !($lottery_game['gamer_count'] >= $games) ?: throw new Exception('Свободные места закончились');
-        $user->lottery_game_matches()->attach($game);
+        !($lottery_game['gamer_count'] <= $games) ?: throw new Exception('Свободные места закончились');
     }
 }

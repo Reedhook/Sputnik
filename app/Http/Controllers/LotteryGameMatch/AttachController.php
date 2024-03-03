@@ -25,6 +25,8 @@ class AttachController extends Controller
         !$game['is_finished'] ?: throw new Exception('Матч уже закончен');
         $user = User::find(auth()->id());
         event(new RecordUsersToGameEvent($game, $user));
+
+        $user->lottery_game_matches()->attach($game);
         return response()->json(['status'=>true]);
     }
 }
