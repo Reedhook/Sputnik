@@ -24,7 +24,7 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         'first_name', 'last_name', 'email', 'is_admin', 'points'
     ];
     protected $guarded = false;
-    protected $table = 'users';
+    public $table = 'users';
 
     public function lottery_game_matches(): BelongsToMany
     {

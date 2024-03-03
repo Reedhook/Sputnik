@@ -13,8 +13,11 @@ class IndexController extends Controller
      */
     public function index(): JsonResponse
     {
-        $users = User::all();
-        return $this->OkResponse($users, 'users');
+        $query = User::with(['lottery_game_matches' => function ($query) {
+            $query->whereColumn('lottery_game_matches.winner_id', 'lottery_game_match_users.user_id');
+        }])->get();
+
+        return $this->OkResponse($query, 'users');
     }
 
 }

@@ -14,7 +14,7 @@ class IndexController extends Controller
      */
     public function index(): JsonResponse
     {
-        $games = LotteryGame::all();
+        $games = LotteryGame::with(['lottery_game_matches'])->get();
         return $this->OkResponse($games, 'lottery_games' );
     }
 }

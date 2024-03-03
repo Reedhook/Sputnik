@@ -15,5 +15,8 @@ class LotteryGame extends Model implements AuthenticatableContract, Authorizable
     use Authenticatable, Authorizable, HasFactory, SoftDeletes;
     protected $guarded = false;
     protected $table = 'lottery_games';
-
+    public function lottery_game_matches()
+    {
+        return $this->hasMany(LotteryGameMatch::class, 'game_id', 'id');
+    }
 }
