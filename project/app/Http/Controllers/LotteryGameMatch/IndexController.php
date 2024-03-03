@@ -21,6 +21,6 @@ class IndexController extends Controller
 
             return $this->OkResponse($game, 'lottery_game');
         }
-        return $this->OkResponse(LotteryGameMatch::all(), 'lottery_games' );
+        return $this->OkResponse(LotteryGameMatch::all(), 'lottery_game_matches' );
     }
 }

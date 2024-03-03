@@ -6,6 +6,7 @@ use App\Events\FinishedGameEvent;
 use App\Events\RecordUsersToGameEvent;
 use App\Models\LotteryGame;
 use App\Models\User;
+use Exception;
 use Illuminate\Support\Facades\Log;
 
 class WinnerListener
@@ -25,6 +26,7 @@ class WinnerListener
      *
      * @param FinishedGameEvent $event
      * @return void
+     * @throws Exception
      */
     public function handle(FinishedGameEvent $event)
     {
@@ -34,6 +36,7 @@ class WinnerListener
         foreach ($users as $user) {
             $winners [] = $user['id'];
         }
+        !empty($winners) ?: throw new Exception('Участников не было');
         $game->update([
             'winner_id' => $winners[array_rand($winners)]
         ]);

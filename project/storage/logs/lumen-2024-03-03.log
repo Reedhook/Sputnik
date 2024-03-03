@@ -326,3 +326,393 @@
 #24 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
 #25 {main}
 "} 
+[2024-03-03 11:46:22] local.ERROR: Данный маршрут только для администраторов {"exception":"[object] (Exception(code: 0): Данный маршрут только для администраторов at /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/AdminMiddleware.php:23)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\AdminMiddleware->handle()
+#1 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#2 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Данный маршрут только для администраторов {"exception":"[object] (Exception(code: 0): Данный маршрут только для администраторов at /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/AdminMiddleware.php:23)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\AdminMiddleware->handle()
+#1 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#2 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(188): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#15 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#16 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(32): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#15 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(188): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(32): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#12 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#13 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(187): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(179): Laravel\\Lumen\\Application->sendExceptionToHandler()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#5 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#6 {main}
+"} 
+[2024-03-03 11:46:55] local.ERROR: Uncaught BadMethodCallException: Method Laravel\Lumen\Http\Request::getMessage does not exist. in /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\Http\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\Exceptions\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(205): App\Exceptions\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(51): Laravel\Lumen\Application->handleException()
+#4 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#5 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught BadMethodCallException: Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. in /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(205): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(51): Laravel\\Lumen\\Application->handleException()
+#4 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#5 {main}
+  thrown at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Данный маршрут только для администраторов {"exception":"[object] (Exception(code: 0): Данный маршрут только для администраторов at /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/AdminMiddleware.php:23)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\AdminMiddleware->handle()
+#1 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#2 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(188): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#15 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#16 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(32): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#15 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(188): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(32): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#12 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#13 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(187): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(179): Laravel\\Lumen\\Application->sendExceptionToHandler()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#5 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#6 {main}
+"} 
+[2024-03-03 11:48:01] local.ERROR: Uncaught BadMethodCallException: Method Laravel\Lumen\Http\Request::getMessage does not exist. in /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\Http\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\Exceptions\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(205): App\Exceptions\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(51): Laravel\Lumen\Application->handleException()
+#4 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#5 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught BadMethodCallException: Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. in /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(205): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(51): Laravel\\Lumen\\Application->handleException()
+#4 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#5 {main}
+  thrown at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Данный маршрут только для администраторов {"exception":"[object] (Exception(code: 0): Данный маршрут только для администраторов at /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/AdminMiddleware.php:23)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\AdminMiddleware->handle()
+#1 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#2 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(188): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#15 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#16 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#17 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(32): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/app/Http/Middleware/Authenticate.php(43): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(183): App\\Http\\Middleware\\Authenticate->handle()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#13 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#14 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#15 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(188): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#12 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#13 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#14 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(72): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Routing/Pipeline.php(32): Laravel\\Lumen\\Routing\\Pipeline->handleException()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/illuminate/pipeline/Pipeline.php(119): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}()
+#5 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(428): Illuminate\\Pipeline\\Pipeline->then()
+#6 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline()
+#7 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(239): Laravel\\Lumen\\Application->handleFoundRoute()
+#8 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(174): Laravel\\Lumen\\Application->handleDispatcherResponse()
+#9 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(431): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#10 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(167): Laravel\\Lumen\\Application->sendThroughPipeline()
+#11 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#12 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#13 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Method Laravel\Lumen\Http\Request::getMessage does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(187): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(179): Laravel\\Lumen\\Application->sendExceptionToHandler()
+#4 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch()
+#5 /home/reedhook/Documents/Sputnik/project/public/index.php(28): Laravel\\Lumen\\Application->run()
+#6 {main}
+"} 
+[2024-03-03 11:48:10] local.ERROR: Uncaught BadMethodCallException: Method Laravel\Lumen\Http\Request::getMessage does not exist. in /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\Http\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\Exceptions\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(205): App\Exceptions\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(51): Laravel\Lumen\Application->handleException()
+#4 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#5 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught BadMethodCallException: Method Laravel\\Lumen\\Http\\Request::getMessage does not exist. in /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112
+Stack trace:
+#0 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(63): Illuminate\\Http\\Request->__call()
+#1 /home/reedhook/Documents/Sputnik/project/app/Exceptions/Handler.php(55): App\\Exceptions\\Handler->jsonException()
+#2 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(205): App\\Exceptions\\Handler->render()
+#3 /home/reedhook/Documents/Sputnik/project/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(51): Laravel\\Lumen\\Application->handleException()
+#4 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#5 {main}
+  thrown at /home/reedhook/Documents/Sputnik/project/vendor/illuminate/macroable/Traits/Macroable.php:112)
+[stacktrace]
+#0 {main}
+"} 
